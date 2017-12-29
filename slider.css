@@ -1,0 +1,43 @@
+:host {
+    contain: content;
+    display: block;
+}
+
+::slotted(.slider-item) {
+    width: 100%;
+    display: block;
+}
+
+#slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#sliderItems {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.navigation {
+    cursor: pointer;
+    position: absolute;
+    top: 49%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background: rgba(211, 211, 211, 0.8);
+    border-radius: 1px;
+    padding: 5px 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
